@@ -5,7 +5,7 @@ const app = require('supertest')(require('../app'));
 describe('Routes', () => {
   describe('/', () => {
     it('is ok', () => {
-      return app.get('/').expect(200);
+      return app.get('/').expect(400);
     });
   });
 });
